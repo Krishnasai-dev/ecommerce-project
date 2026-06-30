@@ -14,7 +14,8 @@ export function OrderSummary({ cart, deliveryOptions, loadCart }) {
           );
 
         const deleteCartItem= async()=> {
-           axios.delete(`/api/cart-items/${cartItem.productId}`);
+          await axios.delete(`/api/cart-items/${cartItem.productId}`);
+          await loadCart();
         };
 
           return (
@@ -58,7 +59,7 @@ export function OrderSummary({ cart, deliveryOptions, loadCart }) {
                     </span>
 
                     <span className="delete-quantity-link link-primary"
-                    onCLick={deleteCartItem}>
+                    onClick={deleteCartItem}>
                       Delete
                     </span>
                   </div>
