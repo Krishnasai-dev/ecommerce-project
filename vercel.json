@@ -1,0 +1,7 @@
+   {
+     "rewrites": [
+       { "source": "/api/:path*", "destination": "https://ecommerce-backend-28aq.onrender.com/api/:path*" },
+       { "source": "/images/:path*", "destination": "https://ecommerce-backend-28aq.onrender.com/images/:path*" },
+       { "source": "/(.*)", "destination": "/index.html" }
+     ]
+   }
