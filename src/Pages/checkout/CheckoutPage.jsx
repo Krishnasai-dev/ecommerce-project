@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { OrderSummary } from './OrderSummary';
 import { PaymentSummary } from './PaymentSummary';
 import './checkout-header.css';
-import './CheckoutPage.css';
+import './checkoutPage.css';
 
 export function CheckoutPage({ cart, loadCart }) {
   const [deliveryOptions, setDeliveryOptions] = useState([]);
